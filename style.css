@@ -56,8 +56,12 @@ body{
 }
 
 .header .conteudo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;    
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;    
     position: fixed;
     z-index: 100;    
 }
@@ -83,6 +87,7 @@ body{
     top: 50px;
     left: -100%;
     width: 100%;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s; 
     z-index: 100;
 }
@@ -107,6 +112,7 @@ body{
 .menu li a:hover{
     background-color: rgba(0,0,0,1);
     color: #fff;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     text-decoration: none;
 }
@@ -163,10 +169,17 @@ body{
 
 
 .assistencia-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;   
-    align-content:center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;   
+    -ms-flex-line-pack:center;   
+        align-content:center;
 }
 
 .assistencia-icons a:hover{
@@ -181,6 +194,7 @@ body{
 
 .assistencia-icons-blocos:hover{
     background: #263645;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -293,17 +307,18 @@ body{
 
 
 .icons{
-    display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
-	display: flex;
-    
-    -webkit-justify-content: center;    
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;    
     -moz-justify-content: center;    
     -ms-justify-content: center;    
     -o-justify-content: center;    
-    justify-content: center;  
+    -webkit-box-pack: center;    
+        -ms-flex-pack: center;    
+            justify-content: center;  
 }
 
 
@@ -334,6 +349,7 @@ body{
     background-color: transparent;
     color: #4482A6;
     border: 1px solid #4482A6;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s; 
 }
 
@@ -345,29 +361,25 @@ body{
 
 
 
-.chamada{    
-    display: -webkit-flex;
+.chamada{
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    
-
-    -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     -o-flex-direction: column;
-    flex-direction: column;
-    
-    
-    -webkit-align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     -moz-align-items: center;
     -ms-align-items: center;
     -o-align-items: center;
-    align-items: center;
-    
-    
-    display: -webkit-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -520,6 +532,7 @@ body{
 
 .energia h1:hover{
     background: rgba(253,210,43,0.8);
+    -webkit-transition: all 0.4s;
     transition: all 0.4s; 
 }
 
@@ -692,6 +705,7 @@ body{
 }
 .backtopo:hover{ 
     /*background:url(assets/images/icon_back2.png) no-repeat;*/
+    -webkit-transition: all 0.4s;
     transition: all 0.4s; 
 }
 
@@ -711,20 +725,7 @@ body{
     
   
     
-    .icon-menu{
-        display: block;
-        width: 42px;
-        height: 40px;
-        font-size: 25px;
-        color: #fff;
-        background: #000;
-        text-align: center;
-        line-height: 40px;
-        padding: 5px;
-        margin: 6px 20px 0 0 !important;
-        
-       
-    }
+   
 
   
     
@@ -762,6 +763,7 @@ body{
     }
     .backtopo:hover{ 
         /*background:url(assets/images/icon_back2.png) no-repeat;*/
+        -webkit-transition: all 0.4s;
         transition: all 0.4s; 
     }
     
@@ -778,14 +780,7 @@ body{
 @media(min-width:768px){
     
   
-    
-    .icon-menu{
-        
-        margin: 6px -360px 0 0 !important;
-        
-       
-    }
-    
+  
     
     .assistencia h1{
         font-size: 40px;
@@ -797,12 +792,7 @@ body{
         
     }
     
-    .icon-menu{
-        
-        margin: 6px 20px 0 0 !important;
-        
-       
-    }
+    
     
 }
 
@@ -867,6 +857,8 @@ body{
     }
     
     .menu{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: -25px 50px 0 0 !important;       
     }    
@@ -898,6 +890,8 @@ body{
         background: #00ABDC;
         margin: 5px auto 0;
         
+        -webkit-transition: all 0.4s ease;
+        
         transition: all 0.4s ease;
     }    
   
@@ -911,11 +905,21 @@ body{
     
     
     .assistencia-icons{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; 
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; 
+        -webkit-box-pack: justify; 
+            -ms-flex-pack: justify; 
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     
     .assistencia-icons-blocos{
@@ -1091,7 +1095,6 @@ body{
     
     
 }
-
 
 
 
