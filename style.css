@@ -1,4 +1,16 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800';
+.example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800';
 @import 'assets/fontastic/styles.css';
 
 
@@ -263,6 +275,63 @@ body{
     font-size: 60px;
     text-align: center;
 }
+
+
+
+
+.ip{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    background: #00ABDC;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0 0 0;
+        border-radius: 5px;
+}
+
+.ip strong{
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+.sobrenos{
+    background: url(assets/images/temp/bg-sobre.jpg) center center no-repeat fixed;
+   
+    
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.sobrenos-titu{
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sobrenos-txt{
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    margin: 10px 0 0 0;
+    text-align: center;
+        border-radius: 5px;
+}
+
+
+
+
+
+
 
 
 
@@ -725,9 +794,34 @@ body{
     
   
     
-   
-
-  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -779,18 +873,18 @@ body{
 /*********************************************************************************/
 @media(min-width:768px){
     
-  
-  
-    
     .assistencia h1{
-        font-size: 40px;
-        
+        font-size: 40px;        
     }
 
     .assistencia h2{
-        font-size: 20px;
-        
+        font-size: 20px;        
     }
+    
+    
+    
+    
+
     
     
     
@@ -942,6 +1036,39 @@ body{
 
     
     
+    .ip{
+        width: 370px;
+        margin: 20px auto;
+    }  
+    
+
+
+    .ip strong{        
+        font-size: 30px;
+    }
+    
+    
+    
+    
+   
+
+  
+    .sobrenos{
+        padding: 60px 0;
+        min-height: 560px;
+    }
+
+    .sobrenos-titu{
+        font-size: 45px;
+    }
+
+    .sobrenos-txt{
+        font-size: 25px;
+        text-align: center;        
+        padding: 15px;        
+        margin: 50px auto 0 auto;
+        width: 80%;
+    }
     
     
     
@@ -952,12 +1079,20 @@ body{
     
     
     
-    
-    
-    
-    
-    
-    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+ 
     
     
     .sobre{
@@ -1095,7 +1230,6 @@ body{
     
     
 }
-
 
 
 
